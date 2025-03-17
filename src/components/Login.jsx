@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Login = () => {
     return (
@@ -6,6 +7,7 @@ const Login = () => {
             <div className="">
                 <h2 className="text-3xl">New Here?</h2>
                 <p className="">If you don’t have an account, sign up now and join us!</p>
+                <Link to='/aa'><button className="btn">Registration</button></Link>
             </div>
             <div className="">
                 <label className="input validator">
