@@ -3,8 +3,8 @@ import React from 'react';
 const HomeLayout = () => {
     return (
         <div>
-            
-            
+            <h3 className="text-3xl">Hello</h3>
+
         </div>
     );
 };
