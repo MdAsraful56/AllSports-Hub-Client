@@ -1,12 +1,11 @@
 import React from 'react';
 
-const HomeLayout = () => {
+const Login = () => {
     return (
         <div>
-            
             
         </div>
     );
 };
 
-export default HomeLayout;
+export default Login;

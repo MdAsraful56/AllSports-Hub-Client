@@ -2,6 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './App.css'
 import MainLayout from './layout/MainLayout'
 import HomeLayout from './layout/HomeLayout'
+import AuthProvider from './provider/AuthProvider'
 
 function App() {
 
@@ -15,7 +16,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
     </>
   )
 }
