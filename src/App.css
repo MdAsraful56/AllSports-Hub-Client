@@ -1,0 +1,25 @@
+.orbitron-font {
+    font-family: "Orbitron", sans-serif;
+}
+
+
+.bebas-neue-font {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.exo-2-font {
+    font-family: "Exo 2", sans-serif;
+}
+
+.iansui-font {
+    font-family: "Iansui", cursive;
+}
+
+
+
+/* btn color  */
+.btn-bg-color {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(217,57,213,1) 0%, rgba(126,122,231,1) 44%, rgba(100,141,236,1) 64%, rgba(0,212,255,1) 100%, rgba(0,105,255,1) 100%);
+}
