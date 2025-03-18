@@ -42,7 +42,7 @@ const Login = () => {
             <div className="md:w-2/5 w-full bg-blue-500 h-[450px] text-center space-y-3 items-center justify-center flex flex-col md:rounded-r-2xl iansui-font p-2">
                 <h2 className="text-4xl">New Here?</h2>
                 <p className="">If you don’t have an account, sign up now and join us!</p>
-                <Link to='/aa'><button className="btn btn-accent iansui-font font-semibold text-base rounded-lg hover:bg-transparent hover:text-white hover:border-2 hover:border-[#a5357c]">Registration</button></Link>
+                <Link to='/registration'><button className="btn btn-accent iansui-font font-semibold text-base rounded-lg hover:bg-transparent hover:text-white hover:border-2 hover:border-[#a5357c]">Registration</button></Link>
             </div>
             <form onSubmit={handleLogin} className="md:w-3/5 w-full flex flex-col gap-4 items-center justify-center iansui-font">
                 <h2 className="text-2xl font-semibold">Login Your Account</h2>

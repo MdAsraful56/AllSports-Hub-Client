@@ -7,8 +7,28 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
     const nav = <>
-        <NavLink to='/'><li>Home</li></NavLink>
-        <NavLink to='/aa'><li>Registration</li></NavLink>
+
+            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+                    isActive
+                    ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`} to="/" >Home</NavLink>
+
+            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+                    isActive
+                    ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`} to="/allsportsequipment" >All Sports Equipment</NavLink>
+            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+                    isActive
+                    ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`} to="/addequipment" >Add Equipment</NavLink>
+            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+                    isActive
+                    ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`} to="/myequipmentlist" >My Equipment List</NavLink>
     </>
 
     return (
@@ -27,7 +47,7 @@ const Navbar = () => {
                         }
                     </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">AllSports Hub</a>
+                    <a className="btn btn-ghost text-xl inline-block px-5 py-2 uppercase rounded-lg shadow-lg ">All Sports Hub</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -79,7 +99,7 @@ const Navbar = () => {
                     ) : (
                     <>
                         <NavLink  className={({ isActive }) =>
-                        `inline-block px-6 py-3 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+                        `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
                             isActive
                             ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
                             : 'text-gray-600 hover:text-gray-900'
