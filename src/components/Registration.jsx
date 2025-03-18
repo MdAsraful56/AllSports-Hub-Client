@@ -33,9 +33,9 @@ const Registration = () => {
                         setTimeout(() => {
                             setLoader(false);  
                         }, 100);
-                console.log(result.user);
-
-                navigrate("/") ;
+                    console.log(result.user);
+                    e.target.reset;
+                    navigrate("/") ;
                 })
                 // eslint-disable-next-line no-unused-vars
                 .catch((err) => {

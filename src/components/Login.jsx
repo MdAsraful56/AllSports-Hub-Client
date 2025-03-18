@@ -1,13 +1,19 @@
-import React, { useContext, useState } from 'react';
-import { Link } from 'react-router';
+import React, { useContext, useRef, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, setUser } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    // eslint-disable-next-line no-unused-vars
+    const emailRef = useRef();
 
     const handleLogin = e => {
         e.preventDefault();
@@ -20,10 +26,14 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 console.log(result.user);
-                // e.target.reset;
+                setUser(result.user)
+                toast.success("Login Successfully!");
+                navigate(location?.state?location.state:"/")
+                e.target.reset;
             })
             .catch(error => {
                 console.log(error);
+                toast.error("Login failed. Please try again."); 
             })
     }
 
