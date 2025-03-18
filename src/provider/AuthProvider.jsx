@@ -1,6 +1,7 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import React, { createContext, useState } from 'react';
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from 'firebase/auth';
+import React, { createContext, useEffect, useState } from 'react';
 import auth from '../firebase/firebase.init';
+import { toast } from 'react-toastify';
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext(null)
@@ -9,6 +10,8 @@ const AuthProvider = ({children}) => {
 
     const [loader, setLoader] = useState(true);
     const [user, setUser] = useState(null);
+    const [photoUrl,setphotoUrl] = useState("")
+    const [userName,setUserName] = useState("")
 
     const createUser = (email, password) => {
         setLoader(true);
@@ -20,11 +23,37 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, password);
     }
 
+
+    const logOut=()=>{
+        toast("Log Out Successfully!")
+        return signOut(auth)
+    }
+
+
+    useEffect(()=> {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setLoader(false);
+            setUser(currentUser);
+        });
+        return unsubscribe();
+    } ,[]);
+
+    // eslint-disable-next-line no-unused-vars
+    const updateInformation = (updateData) => {
+        return updateProfile(auth.currentUser.updateData)
+    }
+
+
     const info = {
-        loader,
-        user,
+        loader, setLoader,
+        user, setUser,
+        photoUrl, setphotoUrl,
+        userName, setUserName,
+        updateInformation,
         createUser,
-        signInUser
+        signInUser,
+        logOut,
+
     }
 
     return (

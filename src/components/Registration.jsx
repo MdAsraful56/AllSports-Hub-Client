@@ -1,13 +1,16 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { toast } from 'react-toastify';
+
 
 const Registration = () => {
 
-    const { createUser } = useContext(AuthContext);
-    const [showPassword, setShowPassword] = useState(false)
+    const { createUser, updateInformation, setLoader, setUser } = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false);
+    const navigrate = useNavigate();
 
     const handleRegistration = e => {
         e.preventDefault();
@@ -21,13 +24,29 @@ const Registration = () => {
 
         createUser(email, password)
             .then(result => {
+                const user = result.user;
+                updateInformation({ photoURL: photo, displayName: name })
+                .then(() => {
+                    toast.success("Successfully logged in!");
+                    setLoader(true);
+                    setUser(user);
+                        setTimeout(() => {
+                            setLoader(false);  
+                        }, 100);
                 console.log(result.user);
+
+                navigrate("/") ;
+                })
+                // eslint-disable-next-line no-unused-vars
+                .catch((err) => {
+                    toast.error("Failed to update user information.");
+                });
             })
             .catch(error => {
-                console.log(error)
+                toast.error(error.message || "Failed to Registration.Your mail is already exist!");
             })
-    }
-
+        };
+    
 
     return (
         <div className='flex md:flex-row flex-col lg:mx-40 md:mx-20 mx-12 items-center justify-center mt-16 border-2 border-red-400 rounded-2xl md:gap-2 gap-10'>
