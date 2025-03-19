@@ -6,6 +6,8 @@ import AuthProvider from './provider/AuthProvider'
 import Registration from './components/Registration'
 import Login from './components/Login'
 import { ToastContainer } from 'react-toastify';
+import AllSportsEquipment from './components/AllSportsEquipment'
+import AddEquipment from './components/AddEquipment'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={ <MainLayout/> } >
         <Route index element={ <HomeLayout/> }  />
+        <Route path='allsportsequipment' element={ <AllSportsEquipment/> } />
+        <Route path='addequipment' element={ <AddEquipment/> } />
         <Route path='registration' element={ <Registration/> } />
         <Route path='login' element={ <Login/> } />
         

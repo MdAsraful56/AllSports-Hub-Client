@@ -8,23 +8,23 @@ const Navbar = () => {
 
     const nav = <>
 
-            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+            <NavLink  className={({ isActive }) => ` mr-3 inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
                     isActive
                     ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
                     : 'text-gray-600 hover:text-gray-900'
                 }`} to="/" >Home</NavLink>
 
-            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+            <NavLink  className={({ isActive }) => ` mr-3 inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
                     isActive
                     ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
                     : 'text-gray-600 hover:text-gray-900'
                 }`} to="/allsportsequipment" >All Sports Equipment</NavLink>
-            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+            <NavLink  className={({ isActive }) => ` mr-3 inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
                     isActive
                     ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
                     : 'text-gray-600 hover:text-gray-900'
                 }`} to="/addequipment" >Add Equipment</NavLink>
-            <NavLink  className={({ isActive }) => `inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
+            <NavLink  className={({ isActive }) => ` mr-3 inline-block px-5 py-2 text-sm font-bold uppercase rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ${
                     isActive
                     ? 'bg-gradient-to-r from-green-400 to-blue-500 text-white'
                     : 'text-gray-600 hover:text-gray-900'
