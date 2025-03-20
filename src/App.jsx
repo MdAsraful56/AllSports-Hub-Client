@@ -8,15 +8,17 @@ import Login from './components/Login'
 import { ToastContainer } from 'react-toastify';
 import AllSportsEquipment from './components/AllSportsEquipment'
 import AddEquipment from './components/AddEquipment'
+import ClientReview from './components/ClientReview'
 
 function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={ <MainLayout/> } >
-        <Route index element={ <HomeLayout/> } loader={ ()=> fetch('../public/review.json') } />
+        <Route index element={ <HomeLayout/> } />
         <Route path='*' element={ <Error/> } />
         <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('../public/Allproduct.json') } />
+        <Route path='a' element={ <ClientReview/> } loader={ async()=> await fetch('../public/review.json') } />
         <Route path='addequipment' element={ <AddEquipment/> } />
         <Route path='registration' element={ <Registration/> } />
         <Route path='login' element={ <Login/> } />
