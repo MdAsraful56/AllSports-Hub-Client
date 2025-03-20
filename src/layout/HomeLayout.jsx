@@ -3,7 +3,8 @@ import Slider from '../components/Slider';
 import CompanyLogo from '../components/CompanyLogo';
 import { Link } from 'react-router';
 import Accordion from '../assets/Accordion.jpg'
-import ClientReview from '../components/ClientReview';
+import AddClientReview from '../components/AddClientReview';
+// import ClientReview from '../components/ClientReview';
 
 const HomeLayout = () => {
 
@@ -52,12 +53,13 @@ const HomeLayout = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="mb-20">
                     <h2 className="text-2xl font-semibold rancho-font text-center mt-10 mb-3">Client Review</h2>
                     <div className="">
                         
                     </div>
                 </div>
+                <AddClientReview />
             </div>
 
             <div className="mb-10">
