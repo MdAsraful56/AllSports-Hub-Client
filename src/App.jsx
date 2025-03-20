@@ -16,7 +16,7 @@ function App() {
       <Route path='/' element={ <MainLayout/> } >
         <Route index element={ <HomeLayout/> }  />
         <Route path='*' element={ <Error/> } />
-        <Route path='allsportsequipment' element={ <AllSportsEquipment/> } />
+        <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('../public/Allproduct.json') } />
         <Route path='addequipment' element={ <AddEquipment/> } />
         <Route path='registration' element={ <Registration/> } />
         <Route path='login' element={ <Login/> } />

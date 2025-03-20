@@ -1,0 +1,142 @@
+[
+{
+    "_id": "SP001",
+    "name": "Nike Air Zoom Terra Multi",
+    "details": "Trail running shoe with breathable mesh upper, Zoom Air cushioning, and durable outsole.",
+    "price": 140,
+    "category": "Running Shoes"
+},
+{
+    "_id": "SP002",
+    "name": "Adidas Ultraboost Light",
+    "details": "Lightweight road running shoe with Boost midsole and Continental™ rubber outsole.",
+    "price": 160,
+    "category": "Running Shoes"
+},
+{
+    "_id": "SP003",
+    "name": "Puma Future Z 1.4 FG",
+    "details": "Firm ground football boots with adaptive FUZIONFIT+ compression band.",
+    "price": 200,
+    "category": "Football Boots"
+},
+{
+    "_id": "SP004",
+    "name": "Under Armour HOVR Machina 3",
+    "details": "Neutral running shoes with energy return HOVR cushioning.",
+    "price": 150,
+    "category": "Running Shoes"
+},
+{
+    "_id": "SP005",
+    "name": "Wilson Blade 98 V8 Tennis Racket",
+    "details": "Top-tier tennis racket with stable and flexible frame.",
+    "price": 220,
+    "category": "Tennis Equipment"
+},
+{
+    "_id": "SP006",
+    "name": "Yonex Astrox 99 Pro Badminton Racket",
+    "details": "High-power badminton racket designed for aggressive smashes.",
+    "price": 180,
+    "category": "Badminton Equipment"
+},
+{
+    "_id": "SP007",
+    "name": "Spalding NBA Official Game Ball",
+    "details": "Genuine leather basketball used in NBA games.",
+    "price": 150,
+    "category": "Basketball"
+},
+{
+    "_id": "SP008",
+    "name": "Everlast Pro Style Training Gloves",
+    "details": "Boxing gloves with wrist support and shock-absorbing foam padding.",
+    "price": 60,
+    "category": "Boxing Equipment"
+},
+{
+    "_id": "SP009",
+    "name": "Salomon Speedcross 6",
+    "details": "Trail running shoes with aggressive grip and EnergyCell+ cushioning.",
+    "price": 130,
+    "category": "Running Shoes"
+},
+{
+    "_id": "SP010",
+    "name": "Garmin Forerunner 255",
+    "details": "Advanced running watch with GPS tracking and heart rate monitoring.",
+    "price": 350,
+    "category": "Wearable Tech"
+},
+{
+    "_id": "SP011",
+    "name": "Nike Mercurial Superfly 9 Elite FG",
+    "details": "Football boots designed for speed with Aerotrak zone for explosive traction.",
+    "price": 275,
+    "category": "Football Boots"
+},
+{
+    "_id": "SP012",
+    "name": "Adidas X Speedportal+ FG",
+    "details": "Laceless football boots with carbon fiber insert for explosive speed.",
+    "price": 280,
+    "category": "Football Boots"
+},
+{
+    "_id": "SP013",
+    "name": "HEAD Radical MP Tennis Racket",
+    "details": "Balanced control and power tennis racket, ideal for intermediate players.",
+    "price": 230,
+    "category": "Tennis Equipment"
+},
+{
+    "_id": "SP014",
+    "name": "Reebok Nano X3 Training Shoes",
+    "details": "Versatile training shoes with Floatride Energy Foam for stability.",
+    "price": 140,
+    "category": "Training Shoes"
+},
+{
+    "_id": "SP015",
+    "name": "Mizuno Wave Rider 26",
+    "details": "High-cushioning road running shoe with Wave Plate technology.",
+    "price": 135,
+    "category": "Running Shoes"
+},
+{
+    "_id": "SP016",
+    "name": "New Balance Fresh Foam 1080v12",
+    "details": "Premium running shoe with Fresh Foam X cushioning for long-distance runs.",
+    "price": 165,
+    "category": "Running Shoes"
+},
+{
+    "_id": "SP017",
+    "name": "Babolat Pure Aero Tennis Racket",
+    "details": "Spin-enhancing racket used by professional players.",
+    "price": 250,
+    "category": "Tennis Equipment"
+},
+{
+    "_id": "SP018",
+    "name": "Oakley Radar EV Path Sunglasses",
+    "details": "High-performance sports sunglasses with Prizm lens technology.",
+    "price": 180,
+    "category": "Sports Accessories"
+},
+{
+    "_id": "SP019",
+    "name": "CamelBak Hydrobak Light",
+    "details": "Lightweight hydration pack with 1.5L reservoir for outdoor sports.",
+    "price": 55,
+    "category": "Sports Accessories"
+},
+{
+    "_id": "SP020",
+    "name": "Under Armour HeatGear Compression Shirt",
+    "details": "Moisture-wicking compression shirt for intense training sessions.",
+    "price": 40,
+    "category": "Sports Apparel"
+}
+]
