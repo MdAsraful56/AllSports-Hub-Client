@@ -1,0 +1,28 @@
+{
+"reviews": [
+    {
+    "image_url": "https://example.com/images/review1.jpg",
+    "title": "Great Quality Sports Gear!",
+    "body": "I bought a set of tennis rackets from this site and I'm very impressed with the quality. Shipping was quick, and the product exceeded my expectations. Highly recommend!",
+    "date": "2025-03-15"
+    },
+    {
+    "image_url": "https://example.com/images/review2.jpg",
+    "title": "Good Selection, Fast Delivery",
+    "body": "The selection of sports shoes is great. I found the pair I needed, and they arrived within a few days. The only downside was the price, but overall, a solid experience.",
+    "date": "2025-03-16"
+    },
+    {
+    "image_url": "https://example.com/images/review3.jpg",
+    "title": "Average Experience",
+    "body": "The products are decent, but the website was a bit hard to navigate. I had trouble finding what I was looking for, and the checkout process took longer than expected.",
+    "date": "2025-03-17"
+    },
+    {
+    "image_url": "https://example.com/images/review4.jpg",
+    "title": "Perfect for Team Sports",
+    "body": "I ordered jerseys and equipment for my kid's soccer team, and everything came in perfect condition. The team loved the gear! The customization option was a nice touch.",
+    "date": "2025-03-18"
+    }
+]
+}

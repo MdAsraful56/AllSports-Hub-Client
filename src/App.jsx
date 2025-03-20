@@ -14,7 +14,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={ <MainLayout/> } >
-        <Route index element={ <HomeLayout/> }  />
+        <Route index element={ <HomeLayout/> } loader={ ()=> fetch('../public/review.json') } />
         <Route path='*' element={ <Error/> } />
         <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('../public/Allproduct.json') } />
         <Route path='addequipment' element={ <AddEquipment/> } />

@@ -1,10 +1,14 @@
 import React from 'react';
 import Slider from '../components/Slider';
 import CompanyLogo from '../components/CompanyLogo';
-import { Link } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import Accordion from '../assets/Accordion.jpg'
+import ClientReview from '../components/ClientReview';
 
 const HomeLayout = () => {
+
+    const reviews = useLoaderData();
+
     return (
         <div className='mt-3'>
             <Slider/>
@@ -51,6 +55,11 @@ const HomeLayout = () => {
                 </div>
                 <div className="">
                     <h2 className="text-2xl font-semibold rancho-font text-center mt-10 mb-3">Client Review</h2>
+                    <div className="">
+                        {
+                            reviews.map((review, index) => <ClientReview key={index} review={review} /> )
+                        }
+                    </div>
                 </div>
             </div>
 
