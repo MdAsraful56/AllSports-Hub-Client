@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from '../components/Slider';
+import CompanyLogo from '../components/CompanyLogo';
 
 const HomeLayout = () => {
     return (
@@ -7,7 +8,7 @@ const HomeLayout = () => {
             <Slider/>
             {/* other components  */}
             <div className="lg:px-32 md:px-20 px-10">
-                
+                <CompanyLogo/>
             </div>
         </div>
     );
