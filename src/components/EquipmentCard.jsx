@@ -5,8 +5,8 @@ const EquipmentCard = ({data}) => {
     const {_id, details, name} = data;
 
     return (
-        <div className=''>
-            <div className="card bg-base-100 w-96 shadow-sm">
+        <div className='rancho-font'>
+            <div className="card bg-base-100 w-[350px] shadow-sm rounded-2xl border-2">
                 <figure>
                     <img
                     src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -15,8 +15,8 @@ const EquipmentCard = ({data}) => {
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p>{details}</p>
-                    <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <div className="card-actions justify-center">
+                    <button className="btn btn-primary w-full">Details</button>
                     </div>
                 </div>
             </div>
