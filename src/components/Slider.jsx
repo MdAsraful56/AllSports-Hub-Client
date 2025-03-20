@@ -38,7 +38,7 @@ const Slider = () => {
                     </div>
                 </div>
                 <div id="item3" className="carousel-item w-full bg-black flex lg:flex-row-reverse flex-col-reverse ">
-                    <div className="pr-20 w-1/2">
+                    <div className="pr-20 lg:w-1/2 w-full">
                         <img src={Slider3} className="lg:w-full h-96 lg:object-cover object-contain" />
                     </div>
                     <div className="text-white text-left flex flex-col justify-center space-y-4 rancho-font lg:w-1/2 w-full lg:px-10 px-4">
@@ -52,7 +52,7 @@ const Slider = () => {
                     </div>
                 </div>
                 <div id="item4" className="carousel-item w-full bg-black flex lg:flex-row-reverse flex-col-reverse ">
-                    <div className="pr-20 w-1/2 items-center">
+                    <div className="pr-20 lg:w-1/2 w-full">
                         <img src={Slider4} className="lg:w-full h-96 lg:object-cover object-contain" />
                     </div>
                     <div className="text-white text-left flex flex-col justify-center space-y-4 rancho-font lg:w-1/2 w-full lg:px-10 px-4">
