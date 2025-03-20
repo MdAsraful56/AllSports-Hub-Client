@@ -14,7 +14,7 @@ const HomeLayout = () => {
             <Slider/>
             <CompanyLogo/>
             {/* other components  */}
-            <div className="lg:px-32 md:px-20 px-10 my-20 mb-96">
+            <div className="lg:px-32 md:px-20 px-10 my-20 mb-20">
                 <div className="rancho-font text-center space-y-5 border-b-2 border-t-2 py-4 border-dashed">
                     <h2 className="text-3xl font-semibold text-center">"Add New Equipment"</h2>
                     <Link to='/addequipment'><button className="btn btn-primary hover:text-white hover:border-white  hover:bg-gradient-to-r from-green-400  to-blue-500">Add Equipment</button></Link>
@@ -59,18 +59,22 @@ const HomeLayout = () => {
                         
                     </div>
                 </div>
-                <AddClientReview />
+                <div className="">
+                    <div className="">
+                        <AddClientReview />
+                    </div>
+                </div>
             </div>
 
             <div className="mb-10">
                 <figure className="diff aspect-16/9 h-72" tabIndex={0}>
                     <div className="diff-item-1" role="img">
-                        <div className="bg-primary text-primary-content grid place-content-center text-9xl font-black">
+                        <div className="bg-primary text-primary-content grid place-content-center text-2xl lg:text-9xl font-black">
                         All Sports Hub
                         </div>
                     </div>
                     <div className="diff-item-2" role="img" tabIndex={0}>
-                        <div className="bg-base-200 grid place-content-center text-9xl font-black">All Sports Hub</div>
+                        <div className="bg-base-200 grid place-content-center text-2xl lg:text-9xl font-black">All Sports Hub</div>
                     </div>
                     <div className="diff-resizer"></div>
                 </figure>
