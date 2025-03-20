@@ -19,9 +19,10 @@ const HomeLayout = () => {
                     <h2 className="text-3xl font-semibold text-center">All Equipment Category </h2>
                     
                 </div>
-                <div className="flex lg:flex-row flex-col gap-5">
+                <h2 className="text-2xl text-center rancho-font font-semibold mt-20">Our Service</h2>
+                <div className="flex lg:flex-row flex-col gap-5 mt-4 rancho-font">
                     <div className="lg:w-1/2 w-full">
-                        <img src={Accordion} alt="" className="h-96" />
+                        <img src={Accordion} alt="" className="h-96 w-full object-cover" />
                     </div>
                     <div className="lg:w-1/2 w-full">
                         <div className="join join-vertical bg-base-100">
@@ -47,6 +48,9 @@ const HomeLayout = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="">
+                    <h2 className="text-2xl font-semibold rancho-font text-center mt-10 mb-3">Client Review</h2>
                 </div>
             </div>
 
