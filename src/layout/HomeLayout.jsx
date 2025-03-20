@@ -8,7 +8,7 @@ const HomeLayout = () => {
             <Slider/>
             <CompanyLogo/>
             {/* other components  */}
-            <div className="lg:px-32 md:px-20 px-10">
+            <div className="lg:px-32 md:px-20 px-10 my-20 mb-96">
                 
             </div>
         </div>

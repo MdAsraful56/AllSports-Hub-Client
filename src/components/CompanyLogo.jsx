@@ -17,6 +17,10 @@ import Img12 from '../assets/CompanyLogo/Image (12).png'
 const CompanyLogo = () => {
     return (
         <div>
+            <div className="">
+                <h2 className="lg:text-2xl text-xl rancho-font text-center font-semibold p-3">"Explore Products from All Our Partner Companies"
+                </h2>
+            </div>
             <Marquee pauseOnHover gradient direction={'right'} speed={100} delay={3} className=''>
                 <div className="">
                     <img src={Img01} alt="" className="w-40 h-36" />
