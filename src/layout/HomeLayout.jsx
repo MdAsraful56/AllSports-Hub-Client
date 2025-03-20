@@ -6,9 +6,10 @@ const HomeLayout = () => {
     return (
         <div className='mt-3'>
             <Slider/>
+            <CompanyLogo/>
             {/* other components  */}
             <div className="lg:px-32 md:px-20 px-10">
-                <CompanyLogo/>
+                
             </div>
         </div>
     );
