@@ -10,8 +10,8 @@ const AuthProvider = ({children}) => {
 
     const [loader, setLoader] = useState(true);
     const [user, setUser] = useState(null);
-    const [photoUrl,setphotoUrl] = useState("")
-    const [userName,setUserName] = useState("")
+    const [photoUrl,setphotoUrl] = useState("");
+    const [userName,setUserName] = useState("");
 
     const createUser = (email, password) => {
         setLoader(true);
@@ -35,7 +35,14 @@ const AuthProvider = ({children}) => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setLoader(false);
             setUser(currentUser);
+            if (currentUser) {
+                console.log('Currently Login User', currentUser);
+            }
+            else {
+                console.log("No User Login");
+            }
         });
+        
         return unsubscribe();
     } ,[]);
 

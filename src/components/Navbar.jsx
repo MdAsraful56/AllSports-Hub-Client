@@ -4,12 +4,12 @@ import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
 
-    const { user, loader , logOut } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
 
 
-    if (loader) {
-        return <span className="loading loading-dots loading-xl"></span>
-    }
+    // if (loader) {
+    //     return <span className="loading loading-dots loading-xl"></span>
+    // }
 
     const nav = <>
 
