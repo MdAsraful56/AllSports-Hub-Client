@@ -27,7 +27,7 @@ const Registration = () => {
                 const user = result.user;
                 updateInformation({ photoURL: photo, displayName: name })
                 .then(() => {
-                    toast.success("Successfully logged in!");
+                    toast.success("Successfully Registration !");
                     setLoader(true);
                     setUser(user);
                         setTimeout(() => {
