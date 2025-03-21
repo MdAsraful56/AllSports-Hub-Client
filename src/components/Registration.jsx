@@ -49,7 +49,7 @@ const Registration = () => {
     
 
     return (
-        <div className='flex md:flex-row flex-col lg:mx-40 md:mx-20 mx-12 items-center justify-center mt-16 border-2 border-red-400 rounded-2xl md:gap-2 gap-10'>
+        <div className='flex md:flex-row flex-col lg:mx-40 md:mx-20 mx-12 mb-10 items-center justify-center mt-16 rounded-2xl md:gap-2 gap-10'>
             <div className="md:w-2/5 w-full bg-blue-500 h-[450px] text-center space-y-3 items-center justify-center flex flex-col md:rounded-l-2xl">
                 <h2 className="text-4xl iansui-font">Welcome Back!</h2>
                 <p className="iansui-font">If you already have an account, please log in with your credentials.</p>
