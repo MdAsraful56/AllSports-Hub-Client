@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import AllSportsEquipment from './components/AllSportsEquipment'
 import AddEquipment from './components/AddEquipment'
 import ClientReview from './components/ClientReview'
+import PrivateRoute from './routes/PrivateRoute'
 // import { reviewsLoader } from './loader/review'
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <Route index element={ <HomeLayout/> } />
         <Route path='*' element={ <Error/> } />
         <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('../public/Allproduct.json') } />
-        <Route path='addequipment' element={ <AddEquipment/> } />
+        <Route path='addequipment' element={ <PrivateRoute><AddEquipment/></PrivateRoute> } />
         <Route path='registration' element={ <Registration/> } />
         <Route path='login' element={ <Login/> } />
         

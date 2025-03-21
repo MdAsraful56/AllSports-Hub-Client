@@ -4,7 +4,12 @@ import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
 
-    const { user, logOut } = useContext(AuthContext);
+    const { user, loader , logOut } = useContext(AuthContext);
+
+
+    if (loader) {
+        return <span className="loading loading-dots loading-xl"></span>
+    }
 
     const nav = <>
 
@@ -64,7 +69,7 @@ const Navbar = () => {
                         {<img src={user?.photoURL}></img> && (
                         (
                         // user profile
-                        <div className="dropdown dropdown-end">
+                        <div className="dropdown dropdown-end rancho-font">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-12 border-2 border-blue-500 rounded-full">
                                     {user ? (
@@ -90,7 +95,7 @@ const Navbar = () => {
                                 </li>
                                 <li>{/* <a>Settings</a> */}</li>
                                 <li>
-                                    <button onClick={logOut}>Logout</button>
+                                    <button className='btn' onClick={logOut}>Logout</button>
                                 </li>
                             </ul>
                         </div>
