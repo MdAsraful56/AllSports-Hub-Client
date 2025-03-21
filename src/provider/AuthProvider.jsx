@@ -25,6 +25,7 @@ const AuthProvider = ({children}) => {
 
 
     const logOut=()=>{
+        setUser(null)
         toast("Log Out Successfully!")
         return signOut(auth)
     }
@@ -38,9 +39,9 @@ const AuthProvider = ({children}) => {
         return unsubscribe();
     } ,[]);
 
-    // eslint-disable-next-line no-unused-vars
+    
     const updateInformation = (updateData) => {
-        return updateProfile(auth.currentUser.updateData)
+        return updateProfile(auth.currentUser, updateData)
     }
 
 
