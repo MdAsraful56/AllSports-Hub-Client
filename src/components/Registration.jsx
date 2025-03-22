@@ -25,6 +25,8 @@ const Registration = () => {
         createUser(email, password)
             .then(result => {
                 const user = result.user;
+                const creationTime = result?.user?.metadata?.creationTime;
+                const newUser = {name, email, creationTime}
                 updateInformation({ photoURL: photo, displayName: name })
                 .then(() => {
                     toast.success("Successfully Registration !");
@@ -36,6 +38,21 @@ const Registration = () => {
                     console.log(result.user);
                     e.target.reset;
                     navigrate("/") ;
+
+                    // save to new user info to database
+
+                        fetch('http://localhost:5000/users', {
+                            method : 'POST',
+                            headers : {
+                                'content-type': 'application/json'
+                            },
+                            body: JSON.stringify(newUser)
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                console.log('user save to database', data);
+                            })
+
                 })
                 // eslint-disable-next-line no-unused-vars
                 .catch((err) => {
