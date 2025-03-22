@@ -7,7 +7,6 @@ const AllSportsEquipment = () => {
 
     const allData = useLoaderData();
 
-    // console.log(allData);
 
 
     return (

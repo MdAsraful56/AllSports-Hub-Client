@@ -70,47 +70,47 @@ const AddEquipment = () => {
                                 <div className="text-left flex md:flex-row flex-col gap-5">
                                     <fieldset className="fieldset md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Equipment Name</legend>
-                                        <input type="text" name='name' className="input input-info input-lg w-full" placeholder="Enter Equipment Name" />
+                                        <input type="text" name='name' className="input input-info input-lg w-full" placeholder="Enter Equipment Name" required />
                                     </fieldset>
                                     <fieldset className=" md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Brand Name</legend>
-                                        <input type="text" name='brand' className="input input-info input-lg w-full" placeholder="Enter Brand Name" />
+                                        <input type="text" name='brand' className="input input-info input-lg w-full" placeholder="Enter Brand Name" required />
                                     </fieldset>
                                 </div>
                                 <div className="text-left flex md:flex-row flex-col gap-5">
                                     <fieldset className="fieldset md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Quantity</legend>
-                                        <input type="text" name='quantity' className="input input-info input-lg w-full" placeholder="Enter Quantity Number" />
+                                        <input type="text" name='quantity' className="input input-info input-lg w-full" placeholder="Enter Quantity Number" required />
                                     </fieldset>
                                     <fieldset className=" md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Price</legend>
-                                        <input type="text" name='price' className="input input-info input-lg w-full" placeholder="Enter Price" />
+                                        <input type="text" name='price' className="input input-info input-lg w-full" placeholder="Enter Price" required />
                                     </fieldset>
                                 </div>
                                 <div className="text-left flex md:flex-row flex-col gap-5">
                                     <fieldset className="fieldset md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Processing Time</legend>
-                                        <input type="text" name='processing' className="input input-info input-lg w-full" placeholder="Enter Processing Time" />
+                                        <input type="text" name='processing' className="input input-info input-lg w-full" placeholder="Enter Processing Time" required />
                                     </fieldset>
                                     <fieldset className=" md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Rating</legend>
-                                        <input type="text" name='rating' className="input input-info input-lg w-full" placeholder="Enter Equipment Rating" />
+                                        <input type="text" name='rating' className="input input-info input-lg w-full" placeholder="Enter Equipment Rating" required />
                                     </fieldset>
                                 </div>
                                 <div className="text-left flex md:flex-row flex-col gap-5">
                                     <fieldset className="fieldset md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Category Name</legend>
-                                        <input type="text" name='category' className="input input-info input-lg w-full" placeholder="Enter Equipment Category" />
+                                        <input type="text" name='category' className="input input-info input-lg w-full" placeholder="Enter Equipment Category" required />
                                     </fieldset>
                                     <fieldset className=" md:w-1/2 w-full items-center">
                                         <legend className="fieldset-legend text-lg">Details</legend>
-                                        <input type="text" name='details' className="input input-info input-lg w-full" placeholder="Enter coffee Details" />
+                                        <input type="text" name='details' className="input input-info input-lg w-full" placeholder="Enter coffee Details" required />
                                     </fieldset>
                                 </div>
                                 <div className="text-left">
                                     <fieldset className="fieldset w-full items-center">
                                         <legend className="fieldset-legend text-lg">Equipment Photo</legend>
-                                        <input type="text" name='photo' className="input input-info input-lg w-full" placeholder="Enter Equipment photo url" />
+                                        <input type="text" name='photo' className="input input-info input-lg w-full" placeholder="Enter Equipment photo url" required />
                                     </fieldset>
                                 </div>
                                 <div className="mt-6">

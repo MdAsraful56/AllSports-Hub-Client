@@ -20,7 +20,7 @@ function App() {
       <Route path='/' element={ <MainLayout/> } >
         <Route index element={ <HomeLayout/> } />
         <Route path='*' element={ <Error/> } />
-        <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('../public/Allproduct.json') } />
+        <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('http://localhost:5000/equipment') } />
         <Route path='addequipment' element={ <PrivateRoute><AddEquipment/></PrivateRoute> } />
         <Route path='myequipmentlist' element={ <PrivateRoute><MyEquipmentList/></PrivateRoute> } />
         <Route path='registration' element={ <Registration/> } />
