@@ -11,6 +11,7 @@ import AddEquipment from './components/AddEquipment'
 import ClientReview from './components/ClientReview'
 import PrivateRoute from './routes/PrivateRoute'
 import MyEquipmentList from './components/MyEquipmentList'
+import Details from './components/Details'
 // import { reviewsLoader } from './loader/review'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route index element={ <HomeLayout/> } />
         <Route path='*' element={ <Error/> } />
         <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('http://localhost:5000/equipment') } />
+        <Route path='allsportsequipment/:id' element={ <Details/> } />
         <Route path='addequipment' element={ <PrivateRoute><AddEquipment/></PrivateRoute> } />
         <Route path='myequipmentlist' element={ <PrivateRoute><MyEquipmentList/></PrivateRoute> } />
         <Route path='registration' element={ <Registration/> } />

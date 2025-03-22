@@ -9,9 +9,9 @@ const EquipmentCard = ({data}) => {
     return (
         <div className='rancho-font'>
             <div className="card bg-base-100 w-[350px] shadow-sm rounded-2xl border-2">
-                <figure>
+                <figure className='p-2'>
                     <img
-                    src={photo}
+                    src={photo} className='w-full h-[290px] object-cover rounded-lg border-2 border-gray-300 shadow-md'
                     alt="Equipment Img" />
                 </figure>
                 <div className="card-body">
