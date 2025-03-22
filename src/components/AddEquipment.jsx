@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 // import bg from '../assets/more/11.png'
 import { Link } from 'react-router';
 import { FaArrowLeft } from "react-icons/fa";
-// import Swal from 'sweetalert2'
-
+import { AuthContext } from '../provider/AuthProvider';
+// import { Swal } from 'sweetalert2';
+import Swal from "sweetalert2";
 const AddEquipment = () => {
+
+    const { user } = useContext(AuthContext);
 
 
     const handleAddEquipment = e =>{
@@ -13,37 +16,41 @@ const AddEquipment = () => {
         const form = e.target;
 
         const name = form.name.value;
-        const chef = form.chef.value;
-        const supplier = form.supplier.value;
-        const taste = form.taste.value;
+        const brand = form.brand.value;
+        const quantity = form.quantity.value;
+        const price = form.price.value;
+        const processing = form.processing.value;
+        const rating = form.rating.value;
         const category = form.category.value;
         const details = form.details.value;
         const photo = form.photo.value;
 
-        const coffee = {name, chef, supplier, taste, category, details, photo};
+        const email = user?.email;
 
-        console.log(coffee);
+        const equipment = {name, brand, quantity, price, processing, rating, category, details, photo, email};
 
-        // // send data to the server 
-        // fetch('http://localhost:5000/coffee', {
-        //     method: 'post', 
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(coffee)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if (data.insertedId) {
-        //             Swal.fire({
-        //                 title: 'Success!',
-        //                 text: 'Add New Coffee Successfully',
-        //                 icon: 'success',
-        //                 confirmButtonText: 'OK'
-        //             })
-        //         }
-        //     })
+        console.log(equipment);
+
+        // send data to the server 
+        fetch('http://localhost:5000/equipment', {
+            method: 'post', 
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(equipment)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Add Equipment Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    })
+                }
+            })
     }
 
 
