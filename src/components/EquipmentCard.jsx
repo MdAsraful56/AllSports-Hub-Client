@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const EquipmentCard = ({data}) => {
 
     const { _id, name, brand, quantity, price, processing, rating, category, details, photo } = data;
+
 
 
 
@@ -25,8 +27,8 @@ const EquipmentCard = ({data}) => {
                         <p className=""> <span className="font-semibold">Price :</span> {price}</p>
                     </div>
                     <p>{details}</p>
-                    <div className="card-actions justify-center">
-                    <button className="btn btn-primary w-full">Details</button>
+                    <div className="card-actions justify-center"> 
+                        <Link to={`/details/${_id}`} className="btn btn-primary w-full">Details</Link>
                     </div>
                 </div>
             </div>
