@@ -22,7 +22,7 @@ function App() {
         <Route index element={ <HomeLayout/> } />
         <Route path='*' element={ <Error/> } />
         <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('http://localhost:5000/equipment') } />
-        <Route path='details/:id' element={ <Details/> } loader={ async({params}) => {return fetch(`http://localhost:5000/details/${params.id}`)}  } />
+        <Route path='/details/:id' element={ <Details/> } loader={ async({params}) => {return fetch(`http://localhost:5000/details/${params.id}`)}  } />
         <Route path='addequipment' element={ <PrivateRoute><AddEquipment/></PrivateRoute> } />
         <Route path='myequipmentlist' element={ <PrivateRoute><MyEquipmentList/></PrivateRoute> } />
         <Route path='registration' element={ <Registration/> } />
