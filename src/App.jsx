@@ -24,7 +24,7 @@ function App() {
         <Route path='allsportsequipment' element={ <AllSportsEquipment/> } loader={ ()=> fetch('http://localhost:5000/equipment') } />
         <Route path='/details/:id' element={ <Details/> } loader={ async({params}) => {return await fetch(`http://localhost:5000/details/${params.id}`)}  } />
         <Route path='addequipment' element={ <PrivateRoute><AddEquipment/></PrivateRoute> } />
-        <Route path='myequipmentlist' element={ <PrivateRoute><MyEquipmentList/></PrivateRoute> } />
+        <Route path='myequipmentlist' element={ <PrivateRoute><MyEquipmentList/></PrivateRoute> } loader={ ()=> fetch('http://localhost:5000/equipment') }  />
         <Route path='registration' element={ <Registration/> } />
         <Route path='login' element={ <Login/> } />
         
