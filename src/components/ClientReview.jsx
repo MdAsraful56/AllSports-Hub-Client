@@ -1,25 +1,25 @@
-// import React from 'react';
-// // import { useLoaderData } from 'react-router';
-// import ClientReviewCard from './ClientReviewCard';
+import React from 'react';
+// import { useLoaderData } from 'react-router';
+import ClientReviewCard from './ClientReviewCard';
 
-// const ClientReview = () => {
-//     // 
+const ClientReview = () => {
+    // 
 
-//     // const reviews = {
-//     //     name: 'Ashraful',
-//     //     img: 'https',
-//     //     message: 'something text'
-//     // }
+    // const reviews = {
+    //     name: 'Ashraful',
+    //     img: 'https',
+    //     message: 'something text'
+    // }
 
 
-//     return (
-//         <div>
-//             <ClientReviewCard />
-//             {/* {
-//                 reviews.map((review, idx) => <ClientReviewCard key={idx} review={review} />)
-//             } */}
-//         </div>
-//     );
-// };
+    return (
+        <div>
+            <ClientReviewCard />
+            {/* {
+                reviews.map((review, idx) => <ClientReviewCard key={idx} review={review} />)
+            } */}
+        </div>
+    );
+};
 
-// export default ClientReview;
+export default ClientReview;

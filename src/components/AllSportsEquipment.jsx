@@ -7,6 +7,9 @@ const AllSportsEquipment = () => {
 
     const allData = useLoaderData();
 
+    // const cricketData = allData.filter(data => data.category === 'Cricket');
+    // const footballData = allData.filter(data => data.category === 'Football');
+
 
 
     return (

@@ -3,8 +3,8 @@ import Slider from '../components/Slider';
 import CompanyLogo from '../components/CompanyLogo';
 import { Link } from 'react-router';
 import Accordion from '../assets/Accordion.webp'
-// import AddClientReview from '../components/AddClientReview';
-// import ClientReview from '../components/ClientReview';
+import AddClientReview from '../components/AddClientReview';
+import ClientReview from '../components/ClientReview';
 
 const HomeLayout = () => {
 
@@ -20,10 +20,10 @@ const HomeLayout = () => {
                     <h2 className="text-3xl font-semibold text-center">"Add New Equipment"</h2>
                     <Link to='/addequipment'><button className="btn btn-primary hover:text-white hover:border-white  hover:bg-gradient-to-r from-green-400  to-blue-500">Add Equipment</button></Link>
                 </div>
-                <div className="rancho-font mt-10">
+                {/* <div className="rancho-font mt-10">
                     <h2 className="text-3xl font-semibold text-center">All Equipment Category </h2>
                     
-                </div>
+                </div> */}
                 <h2 className="text-2xl text-center rancho-font font-semibold mt-20">Our Service</h2>
                 <div className="flex lg:flex-row flex-col gap-5 mt-4 rancho-font">
                     <div className="lg:w-1/2 w-full">
@@ -54,7 +54,7 @@ const HomeLayout = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className="mb-20">
+                <div className="mb-20">
                     <h2 className="text-2xl font-semibold rancho-font text-center mt-10 mb-3">Client Review</h2>
                     <div className="">
                         <ClientReview/>
@@ -64,7 +64,7 @@ const HomeLayout = () => {
                     <div className="">
                         <AddClientReview />
                     </div>
-                </div> */}
+                </div>
             </div>
 
             <div className="mb-10">
