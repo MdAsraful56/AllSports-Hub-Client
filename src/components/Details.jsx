@@ -9,13 +9,13 @@ const Details = () => {
 
 
     return (
-        <div>
-            <div className="">
+        <div className='m-20'>
+            <div className="flex lg:flex-row flex-col items-center justify-center gap-10 rancho-font">
                 <div className="">
-                    <img src={photo} className='' alt="" />
+                    <img src={photo} className='w-full h-[290px] object-cover rounded-lg border-2 border-gray-300 shadow-md' alt="" />
                 </div>
                 <div className="">
-                    <h2 className=''>{name}</h2>
+                    <h2 className='font-medium'> <span className='font-bold'>Name :</span> {name}</h2>
                     <div className="">
                         <p className=''> <span className='font-semibold'>Brand :</span> {brand}</p>
                         <p className=''> <span className='font-semibold'>Quantity :</span> {quantity}</p>
