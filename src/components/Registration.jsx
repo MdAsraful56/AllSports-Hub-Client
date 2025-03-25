@@ -26,7 +26,7 @@ const Registration = () => {
             .then(result => {
                 const user = result.user;
                 const creationTime = result?.user?.metadata?.creationTime;
-                const newUser = {name, email, creationTime}
+                const newUser = {name, email, photo, creationTime}
                 updateInformation({ photoURL: photo, displayName: name })
                 .then(() => {
                     toast.success("Successfully Registration !");

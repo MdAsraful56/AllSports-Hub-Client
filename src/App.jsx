@@ -8,7 +8,7 @@ import Login from './components/Login'
 import { ToastContainer } from 'react-toastify';
 import AllSportsEquipment from './components/AllSportsEquipment'
 import AddEquipment from './components/AddEquipment'
-// import ClientReview from './components/ClientReview'
+import ClientReview from './components/ClientReview'
 import PrivateRoute from './routes/PrivateRoute'
 import MyEquipmentList from './components/MyEquipmentList'
 import Details from './components/Details'
@@ -27,7 +27,7 @@ function App() {
         <Route path='myequipmentlist' element={ <PrivateRoute><MyEquipmentList/></PrivateRoute> } loader={ ()=> fetch('http://localhost:5000/equipment') }  />
         <Route path='registration' element={ <Registration/> } />
         <Route path='login' element={ <Login/> } />
-        
+        <Route path='/' element={ <ClientReview/> } loader={async () => { await fetch('http://localhost:5000/review'); }}/>
       </Route>
     )
   )

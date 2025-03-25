@@ -12,8 +12,11 @@ const AddClientReview = () => {
         e.preventDefault(); // Stops the form from submitting
 
         
-        const message = e.target.message;
-        console.log(message)
+        // const message = e.target.message.innerHTML;
+        // const message = e.target.message.value;
+        const message = document.getElementById('message').value;
+        // const message = e.target.elements.message.value; 
+        // console.log(message)
 
 
         const name = user?.displayName;
@@ -22,18 +25,18 @@ const AddClientReview = () => {
 
         const review = {name, email, photo, message};
 
-        // fetch('http://localhost:5000/', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(review)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-                
-        //     })
+        fetch('http://localhost:5000/review', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                e.target.reset();
+            })
     }
 
 
