@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import { useLoaderData } from 'react-router';
 import ClientReviewCard from './ClientReviewCard';
+import Marquee from "react-fast-marquee";
 
 const ClientReview = () => {
 
@@ -27,11 +28,13 @@ const ClientReview = () => {
     // console.log('reuveuvdjsakfhwuei', reviews)
 
     return (
-        <div>
-            {
-                reviews.map((review, idx) => <ClientReviewCard key={idx} review={review} />)
-            }
-        </div>
+        <Marquee className=''>
+            <div className="grid  gap-5 grid-cols-3">
+                {
+                    reviews.map((review, idx) => <ClientReviewCard key={idx} review={review} />)
+                }
+            </div>
+        </Marquee>
     );
 };
 

@@ -54,6 +54,7 @@ const HomeLayout = () => {
                         </div>
                     </div>
                 </div>
+                </div>
                 <div className="mb-20">
                     <h2 className="text-2xl font-semibold rancho-font text-center mt-10 mb-3">Client Review</h2>
                     <div className="">
@@ -65,7 +66,7 @@ const HomeLayout = () => {
                         <AddClientReview />
                     </div>
                 </div>
-            </div>
+            
 
             <div className="mb-10">
                 <figure className="diff aspect-16/9 h-72" tabIndex={0}>

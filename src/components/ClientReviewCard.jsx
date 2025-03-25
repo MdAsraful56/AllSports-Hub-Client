@@ -1,5 +1,6 @@
 import React from 'react';
 import { AuthContext } from '../provider/AuthProvider';
+import { Marquee } from 'react-fast-marquee';
 
 const ClientReviewCard = ({ review }) => {
 
@@ -8,7 +9,8 @@ const ClientReviewCard = ({ review }) => {
 
 
     return (
-        <div className='flex flex-col-reverse gap-5 border-2 border-gray-300 p-3 rounded-lg w-1/3'>
+        
+        <div className='flex flex-col-reverse gap-5 border-2 border-gray-300 p-3 rounded-lg w-96'>
             <div className="flex flex-row gap-5">
                 <img src={photo} alt="" className="w-16 h-16 rounded-full object-cover border-2 border-gray-300" />
                 <div className="">
@@ -20,6 +22,7 @@ const ClientReviewCard = ({ review }) => {
                 <p className="">{message}</p>
             </div>
         </div>
+        
     );
 };
 
