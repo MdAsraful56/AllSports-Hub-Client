@@ -28,7 +28,7 @@ const ClientReview = () => {
     // console.log('reuveuvdjsakfhwuei', reviews)
 
     return (
-        <Marquee className=''>
+        <Marquee pauseOnHover  className=''>
             <div className="grid  gap-5 grid-cols-3">
                 {
                     reviews.map((review, idx) => <ClientReviewCard key={idx} review={review} />)
